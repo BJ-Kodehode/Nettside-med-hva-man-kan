@@ -1,0 +1,75 @@
+/* Reset-stil for å fjerne standardmarginer og padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Bakgrunn og header-styling */
+body {
+    text-align: center;
+    background-color: silver;
+    display: flex;
+    flex-direction: column; /* Stabler elementene vertikalt */
+    min-height: 100vh; /* Sørger for at body tar hele skjermens høyde */
+}
+
+header {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Hovedinnhold */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Sørger for at main fyller ledig plass */
+    width: 100%;
+}
+
+/* Sentrer container i midten av skjermen */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Bokser */
+.box {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+/* Spesifikke farger for forskjellige læringsområder */
+.html {
+    background-color: yellowgreen;
+}
+
+.javascript {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.csharp {
+    background-color: saddlebrown;
+    color: white;
+}
+
+.god{
+    background-color: salmon;
+    color: white;
+}
+
