@@ -1,22 +1,114 @@
+/* Reset-stil for å fjerne standardmarginer og padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Bakgrunn og header-styling */
+body {
+    text-align: center;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Hovedinnhold */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Sentrer container i midten av skjermen */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Bokser */
+.box {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    position: relative;
+    animation: floatAround 5s infinite alternate ease-in-out;
+    text-align: center;
+}
+
+/* Animasjon for å få tekstene til å flyte rundt */
+@keyframes floatAround {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(-10px, 10px);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(-10px, -10px);
+    }
+}
+
+/* Spesifikke farger for forskjellige læringsområder */
+.html {
+    background-color: yellowgreen;
+}
+
+.javascript {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.csharp {
+    background-color: saddlebrown;
+    color: white;
+}
+
+/* Styling for "god" boksen (knapp) */
 .god {
     background-color: salmon;
     color: white;
-    text-align: center;
     transition: transform 0.2s, background-color 0.3s;
 }
 
-/* Gjør lenken til en knapp */
+/* Gjør lenken til en knapp inni boksen */
 .god a {
     display: block;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 15px;
     width: 100%;
     height: 100%;
+    padding: 15px;
 }
 
-/* Hover-effekt for bedre feedback */
+/* Hover-effekt */
 .god:hover {
     background-color: darkred;
     transform: scale(1.05);
