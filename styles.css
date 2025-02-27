@@ -11,8 +11,8 @@ body {
     text-align: center;
     background-color: silver;
     display: flex;
-    flex-direction: column; /* Stabler elementene vertikalt */
-    min-height: 100vh; /* Sørger for at body tar hele skjermens høyde */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -31,7 +31,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1; /* Sørger for at main fyller ledig plass */
+    flex-grow: 1;
     width: 100%;
 }
 
@@ -51,6 +51,27 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     user-select: none;
+    position: relative;
+    animation: floatAround 5s infinite alternate ease-in-out;
+}
+
+/* Animasjon for å få tekstene til å flyte rundt */
+@keyframes floatAround {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -10px);
+    }
+    50% {
+        transform: translate(-10px, 10px);
+    }
+    75% {
+        transform: translate(10px, 10px);
+    }
+    100% {
+        transform: translate(-10px, -10px);
+    }
 }
 
 /* Spesifikke farger for forskjellige læringsområder */
@@ -68,8 +89,7 @@ main {
     color: white;
 }
 
-.god{
+.god {
     background-color: salmon;
     color: white;
 }
-
