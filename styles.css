@@ -88,6 +88,10 @@ main {
     height: 100%;
     padding: 15px;
 }
+.html:hover {
+    background-color: rgb(21, 4, 255);
+    transform: scale(1.05);
+}
 
 .javascript {
     background-color: rebeccapurple;
@@ -102,6 +106,10 @@ main {
     width: 100%;
     height: 100%;
     padding: 15px;
+}
+.javascript:hover {
+    background-color: rgb(6, 255, 81);
+    transform: scale(1.05);
 }
 
 .csharp {
@@ -119,6 +127,10 @@ main {
     width: 100%;
     height: 100%;
     padding: 15px;
+}
+.csharp:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.05);
 }
 
 /* Styling for "god" boksen (knapp) */
@@ -142,5 +154,24 @@ main {
 /* Hover-effekt */
 .god:hover {
     background-color: darkred;
+    transform: scale(1.05);
+}
+
+.column{
+    background-color: rgb(0, 238, 99);
+    color: white;
+    transition: transform 0.2s, background-color 0.3s;
+}
+.column a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+.column:hover {
+    background-color: rgb(238, 23, 156);
     transform: scale(1.05);
 }
