@@ -10,6 +10,7 @@
 body {
   text-align: center;
   background-color: silver;
+  background: url(https://www.tine.no/_/recipeimage/w_1600,h_900,c_fill,x_2024,y_1138,g_xy_center/recipeimage/qqlnmoijejxbcymphvcp.jpg);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
